@@ -1,0 +1,159 @@
+:root {
+  --primario: #1d009f;
+  --primarioOscuro: #222122;
+  --secundario: #FFCE00;
+  --secundarioOscuro: rgb(233, 187, 2);
+  --blanco: #FFF;
+  --negro: #000;
+
+  --fuentePrincipal: 'Arial', cursive;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; 
+}
+
+/** Globales **/
+
+a {
+  text-decoration: none;
+}
+
+.titulo{
+  text-align: center;
+  color: var(--secundario);
+  font-family: var(--fuentePrincipal);
+  font-size: 3rem;
+}
+
+/** Header **/
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #222122;
+  margin: auto;
+  width: auto;
+}
+
+/** Footer **/
+.footer {
+  background-color: var(--primarioOscuro);
+  padding: 1rem 0;
+  margin-top: 40rem;
+}
+.footer__texto {
+  font-family: var(--fuentePrincipal);
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--blanco);
+}
+/** Navegacion **/
+.navegacion {
+  background-color: var(--primarioOscuro);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem; 
+}
+.navegacion__enlace {
+  font-family: var(--fuentePrincipal);
+  color: var(--blanco);
+  font-size: 3rem;
+}
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+  color: var(--secundario);
+}
+
+body {
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 120%;
+  background-repeat: round;
+}
+
+.card {  
+  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background: #575656d0;
+  color: white;
+  padding: 2em;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #ffffff2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  height: 44px;
+  width: 44px;
+  width: calc(100% - 100px);
+}
+
+button:hover {
+  background: #7c7c7c6b;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+img{
+  width: 80%;
+  mask-repeat: no-repeat;
+}
